@@ -11,10 +11,10 @@ metadata:
 spec:
   containers:
     - name: nginxc
-    image: nginx
-    ports:
-      - containerPort: 80
+      image: nginx
+      ports:
+        - containerPort: 80
     - name: busyboxc
-    image: busybox/latest
-    command: ("bin/bash")
-    args: ["-c", "while true; do echo 'Hello World!' sleep:20; done"]
+      image: busybox/latest
+      command: ("bin/bash")
+      args: ["-c", "while true; do echo 'Hello World!' sleep:20; done"]
