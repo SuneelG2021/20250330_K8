@@ -6,7 +6,7 @@ metadata:
   name: container-port
   labels:
     app: nginx_p
-    tier: fornt-end
+    tier: front-end
     
 spec:
   containers:
@@ -17,4 +17,4 @@ spec:
     - name: busyboxc
       image: busybox
       command: ("/bin/bash")
-      args: ["-c", "while true; do echo 'Hello World!'; sleep:20; done"]
+      args: ["-c", "while true; do echo 'Hello World!'; sleep 20; done"]
